@@ -4,3 +4,6 @@
 [submodule "src/main/resources/graphql"]
 	path = src/main/resources/graphql
 	url = git@github.com:heavenboards/graphql-schema.git
+[submodule "src/submodules/transfer-contract"]
+	path = src/submodules/transfer-contract
+	url = git@github.com:heavenboards/transfer-contract.git
