@@ -1,3 +1,6 @@
 [submodule "parent"]
 	path = parent
 	url = git@github.com:heavenboards/backend-parent.git
+[submodule "src/main/resources/graphql"]
+	path = src/main/resources/graphql
+	url = git@github.com:heavenboards/graphql-schema.git
