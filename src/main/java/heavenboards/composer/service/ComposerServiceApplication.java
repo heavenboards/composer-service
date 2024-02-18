@@ -3,9 +3,20 @@ package heavenboards.composer.service;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-@SpringBootApplication
+/**
+ * Главный класс для запуска сервиса.
+ */
+@SpringBootApplication(scanBasePackages = {
+    "heavenboards.composer.service",
+    "transfer.contract"
+})
 public class ComposerServiceApplication {
-    public static void main(String[] args) {
+    /**
+     * Главный метод для запуска сервиса.
+     *
+     * @param args - аргументы запуска
+     */
+    public static void main(final String[] args) {
         SpringApplication.run(ComposerServiceApplication.class, args);
     }
 }
