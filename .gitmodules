@@ -2,7 +2,7 @@
 	path = parent
 	url = https://github.com/heavenboards/backend-parent.git
 [submodule "src/main/resources/graphql"]
-	path = src/main/resources/graphql
+	path = src/main/resources/schema
 	url = https://github.com/heavenboards/graphql-schema.git
 [submodule "src/submodules/transfer-contract"]
 	path = src/submodules/transfer-contract
