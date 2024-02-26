@@ -3,6 +3,7 @@ package heavenboards.composer.service;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.security.servlet.SecurityAutoConfiguration;
+import org.springframework.cloud.openfeign.EnableFeignClients;
 
 /**
  * Главный класс для запуска сервиса.
@@ -11,6 +12,7 @@ import org.springframework.boot.autoconfigure.security.servlet.SecurityAutoConfi
     "heavenboards.composer.service",
     "transfer.contract"
 }, exclude = SecurityAutoConfiguration.class)
+@EnableFeignClients(basePackages = "transfer.contract")
 public class ComposerServiceApplication {
     /**
      * Главный метод для запуска сервиса.
