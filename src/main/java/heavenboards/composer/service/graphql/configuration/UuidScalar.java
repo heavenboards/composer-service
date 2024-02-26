@@ -16,7 +16,7 @@ public class UuidScalar extends AbstractValueObjectScalar<UUID, String> {
      * @return значение типа UUID
      */
     @Override
-    protected UUID deserializeHelper(String value) {
+    protected UUID deserializeHelper(final String value) {
         return UUID.fromString(value);
     }
 
@@ -27,7 +27,7 @@ public class UuidScalar extends AbstractValueObjectScalar<UUID, String> {
      * @return строковое отображение объекта
      */
     @Override
-    protected String serializeHelper(UUID value) {
+    protected String serializeHelper(final UUID value) {
         return value.toString();
     }
 }

@@ -30,7 +30,7 @@ public class UserFetcher {
      */
     @DgsQuery
     @SuppressWarnings("unused")
-    public UserTo findUserByUsername(String username) {
+    public UserTo findUserByUsername(final String username) {
         return userApi.findUserByUsername(username);
     }
 
@@ -42,7 +42,7 @@ public class UserFetcher {
      */
     @DgsQuery
     @SuppressWarnings("unused")
-    public List<UserTo> findUsersByIds(DgsDataFetchingEnvironment dfe) {
+    public List<UserTo> findUsersByIds(final DgsDataFetchingEnvironment dfe) {
         Set<UUID> ids = Set.of(dfe.getArgument("ids"));
         return userApi.findUsersByIds(ids);
     }

@@ -34,7 +34,7 @@ public class AuthenticationFetcher {
      */
     @DgsQuery
     @SuppressWarnings("unused")
-    public AuthenticationOperationResultTo register(DgsDataFetchingEnvironment dfe) {
+    public AuthenticationOperationResultTo register(final DgsDataFetchingEnvironment dfe) {
         Object rawRequest = dfe.getArgument("request");
         RegistrationRequestTo request = objectMapper
             .convertValue(rawRequest, RegistrationRequestTo.class);
@@ -49,7 +49,7 @@ public class AuthenticationFetcher {
      */
     @DgsQuery
     @SuppressWarnings("unused")
-    public AuthenticationOperationResultTo authenticate(DgsDataFetchingEnvironment dfe) {
+    public AuthenticationOperationResultTo authenticate(final DgsDataFetchingEnvironment dfe) {
         Object rawRequest = dfe.getArgument("request");
         AuthenticationRequestTo request = objectMapper
             .convertValue(rawRequest, AuthenticationRequestTo.class);
