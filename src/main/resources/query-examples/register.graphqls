@@ -1,0 +1,24 @@
+{
+    register(request: {
+        username: "danil2",
+        password: "momIamt4lented!",
+        firstName: "Daniil",
+        lastName: "Pyankov"
+    }) {
+        __typename
+        ... on AuthenticationOperationResult {
+            status
+            userId
+            token
+            errors {
+                failedUserId
+                errorCode
+            }
+        }
+        __typename
+        ... on ApplicationException {
+            message
+            errorCode
+        }
+    }
+}

@@ -1,5 +1,16 @@
 spring:
   application:
     name: composer-service
+  docker:
+    compose:
+      enabled: false
+  graphql:
+    graphiql:
+      enabled: true
 server:
   port: 8092
+microservice:
+  user-api:
+    url: http://localhost:8093
+  project-api:
+    url: http://localhost:8094
