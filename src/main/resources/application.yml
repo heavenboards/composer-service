@@ -14,3 +14,5 @@ microservice:
     url: http://localhost:8093
   project-api:
     url: http://localhost:8094
+  board-api:
+    url: http://localhost:8095
