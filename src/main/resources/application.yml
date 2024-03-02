@@ -4,9 +4,6 @@ spring:
   docker:
     compose:
       enabled: false
-  graphql:
-    graphiql:
-      enabled: true
 server:
   port: 8092
 microservice:
