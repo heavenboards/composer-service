@@ -5,13 +5,14 @@ spring:
     compose:
       enabled: false
 server:
+  host: ${REMOTE_SERVER_HOST}
   port: 8092
 microservice:
   user-api:
-    url: http://localhost:8093
+    url: http://${server.host}:8093
   project-api:
-    url: http://localhost:8094
+    url: http://${server.host}:8094
   board-api:
-    url: http://localhost:8095
+    url: http://${server.host}:8095
   task-api:
-    url: http://localhost:8096
+    url: http://${server.host}:8096
