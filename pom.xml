@@ -19,4 +19,8 @@
 		<java.version>21</java.version>
 		<graphql.dgs.version>8.3.0</graphql.dgs.version>
 	</properties>
+
+	<build>
+		<finalName>composer-service</finalName>
+	</build>
 </project>
